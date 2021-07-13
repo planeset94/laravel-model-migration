@@ -8,8 +8,8 @@ use App\Vacanze;
 class vacanze_controller extends Controller
 {
     public function index() {
-        $trip=Vacanze::all();
-        ddd($trip);
-        return view('vacanze.index', compact('trip'));
+        $vacanze=Vacanze::all();
+        // ddd($vacanze);
+        return view('vacanze.index', compact('vacanze'));
     }
 }
